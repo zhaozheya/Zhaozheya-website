@@ -1,0 +1,122 @@
+html{
+}
+ul,li,a,span{ margin:0; padding:0}
+
+.piclink .popbox{
+	display:none;
+	}
+.container{
+	width:100%;
+	border-bottom-style:inherit;
+	border-bottom:1px dotted #a4b0bc;
+	}
+/* Navigation Bar */
+#navigationbar{
+	text-align: center;
+	width:100%;
+	overflow:hidden;
+
+}
+#navigationbar ul{
+	height:10%;
+	list-style: none;
+
+
+}
+#navigationbar li{
+	width: 100%;
+	border:0px solid #8dd2ff;
+	height:16%;
+	over-flow: hidden
+	
+}
+
+#navigationbar li a{
+	width: 16%;
+	float:left;
+	font-size:8px;
+	text-decoration : none;
+	border:0px solid #8dd2ff;
+  border: 0px dotted #a4b0bc;
+	
+}
+#navigationbar li a div{
+	height:30px;
+	background-color:#8dd2ff;
+	border: 1px solid #ffffff;
+	
+}
+#navigationbar li a div:visited{
+	border-bottom: 5px solid #74C2E9;
+
+	
+}
+#navigationbar li a div:hover{
+
+	border-bottom: 5px solid #74C2E9;
+
+}
+#navigationbar li a div:active{
+
+	border-bottom: 5px solid #74C2E9;
+
+}
+..span-right{
+	height:30%;
+	}
+.span-left{
+	height:60%;
+	}
+#personInfo{
+
+	width:100%;
+	text-align:left;
+
+}
+
+#personInfo a{
+
+	}
+#personInfohead h1{
+
+	}
+#personInfohead img{
+	width:20%;
+
+	z-index: 10;
+	}
+#contacts{
+	text-align:center;
+	}
+#contacthead{
+	top:100px;
+  height:40%;
+	}
+#contacthead h1 {
+ font-size:1.5em; 
+}
+#contactmail{
+ height:50%;
+
+	text-align: center;
+	 
+	}
+	
+	#snslink{
+	margin-left: 0%;
+	width: 100%;
+	text-align:center;
+	
+	}
+#snslink li{
+	float:left;
+	list-style: none;
+	width:20%;
+	}
+#snslink img{
+	border:none;
+	}
+
+.showSection {
+	display: none;
+}

@@ -1,0 +1,424 @@
+html{
+}
+body,div,ul,li,a,span,section{ margin:0; padding:0}
+body {
+   overflow:auto; 
+  background: #e9e9e9;
+  width:100%;
+  color:#7EC0EE;
+  font-family: ProximaNova-Regular, Georgia, Palatino, serif;
+  background-color:#ffffff;
+  background-image: url(../images/background/stone.jpg);
+  }
+a{
+	text-decoration : none;
+	color:#8dd2ff;
+	}
+.piclink .popbox{
+	display:none;
+	}
+.piclink .popbox img{
+	width:100%;
+	height:100%;
+	}
+.piclink:hover .popbox{
+	text-align:center;
+	display:block;
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	}
+
+
+.container{
+	width:100%;
+	border-bottom-style:inherit;
+	border-bottom:0px dotted #a4b0bc;
+	}
+.container1{
+	width:100%;
+	height:0;
+	border-bottom:0px dotted #a4b0bc;
+	}
+.span-right{
+	position:fixed;
+	right:0;
+	height:100%;
+	width:15%;
+	background-color:#000000;
+	border-left:3px solid #8dd2ff;
+	}
+
+.span-left{
+	float:left;
+	padding: 0px;
+	height:100%;
+	width:85%;
+	
+	}
+.span-left .head{
+
+	width:100%;
+	height:35%;
+	}
+.span-left .head h1{
+	text-align:center;
+	font-family: SkolarWeb-Bold;
+	font-size: 76px;
+	}
+.span-left .content{
+	float:inherit;	
+	width:90%;
+	height:65%;
+	margin-left: 5%;
+	}
+.span-left .content p{
+	padding:0px 20px;
+
+}
+	
+.span-top{
+	height:20%;
+	width:100%;
+	}
+.span-middle{
+	height:60%;
+	width:100%;
+
+	}
+.span-bottom{
+	height:10%;
+	width:100%;
+	}
+.seperateline{
+	width:85%;
+	text-align:center;
+	height:3px;
+	}
+
+/* Navigation Bar */
+#navigationbar{
+	text-align: center;
+	font-size:1.25em;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+
+}
+#navigationbar ul{
+	height:100%;
+	list-style: none;
+
+
+}
+#navigationbar li{
+	width: 100%;
+	border:0px solid #8dd2ff;
+	height:16%;
+	over-flow: hidden
+	
+}
+
+#navigationbar li a{
+	width: 100%;
+	text-decoration : none;
+	border:0px solid #8dd2ff;
+	margin:0.75em;
+	/*background: transparent;*/
+	color:#ffffff;
+	/*background-color:#e9e9e9;*/
+  border: 0px dotted #a4b0bc;
+	
+}
+#navigationbar li a div{
+	width:100%;
+	float:center;
+        font-family:ProximaNova;
+	border: 0px dotted #a4b0bc;
+	
+}
+#navigationbar li a div:visited{
+	color:#ffffff;
+	background-color:#ffffff;
+	border-bottom: 5px solid #74C2E9;
+	-moz-border-radius: 11px 40px;
+	border-radius: 11px 40px;
+ 	-webkit-border-radius: 11px 40px;
+	
+}
+#navigationbar li a div:hover{
+	color:#ffffff;
+	background-color:#74C2E9;
+	border-bottom: 5px solid #74C2E9;
+	-moz-border-radius: 36px 50px 50px 36px / 12px 30px 30px 12px;
+	border-radius: 36px 50px 50px 36px / 12px 30px 30px 12px;
+ 	-webkit-border-radius: 36px 50px 50px 36px / 12px 30px 30px 12px;
+}
+#navigationbar li a div:active{
+	color:#e9e9e9;
+	background-color:#8dd2ff;
+	border-bottom: 5px solid #74C2E9;
+	-moz-border-radius: 11px 40px;
+	border-radius: 11px 40px;
+ 	-webkit-border-radius: 11px 40px;	
+}
+
+#personInfo{
+	top:1em;
+	width:100%;
+	text-align:left;
+	font-family: TisaWebProRegular, Helvetica,Segoe UI;
+	font-size:20px;
+}
+#personInfo a{
+	color:#FF4040;
+	}
+#personInfo em{
+	color:#ffffff;
+	}
+#personInfohead h1{
+	color:#7EC0EE;
+	font-size:66px;
+	font-family:SkolarWeb-Bold, ArvilSans;
+	}
+#personInfohead img{
+	width:10%;
+	position: fixed;
+	right: 10%;
+	top: 3%;
+	z-index: 10;
+	}
+#picturehead{
+	height:auto;
+	text-align:center;
+	}
+#picturehead h1{
+	padding-top:20px;
+	color:#000;
+	font-size:44px;
+	}
+	#picturehead h2{
+	margin-top:0px;
+	color:#fff;
+	font-size:14px;
+	}
+
+#contacthead{
+	color:#ffffff;
+	}
+#contacthead h1 {
+		font-size:76px;
+
+}
+#contactmail{
+	font-family: TisaWebProRegular;
+	font-size: 30px;
+	text-align: center;
+	color:#ffffff;
+	 
+	}
+#snslink{
+	margin-left: 30%;
+	width: 40%;
+	text-align:center;
+	
+	}
+#snslink li{
+	float:left;
+	list-style: none;
+	width:20%;
+	}
+#snslink img{
+	border:none;
+	}
+
+#contacts{
+	font-family:TisaWebProRegular,Helvetica,Segoe UI;
+}
+
+
+
+
+.showSection {
+	display: none;
+}
+.showSection {
+	width: 680px;
+	float: left;
+	background: url(../images/background/spiked_pattern.png) repeat-y left bottom;
+	position: fixed;
+	right:15%;
+	height:100%;
+	top:0px;
+	border: 0px dotted #a4b0bc;
+}
+		
+		.showSection .closeshowSection {
+			background: url(../images/background/close_panel.png) no-repeat;
+			position: absolute;
+			left: 3%;
+			top: 10px;
+			cursor: pointer;
+			text-indent: -9999px;
+			overflow: hidden;
+			width: 17px;
+			height: 17px;
+		}
+				.showSection .closeshowSection:hover {
+					background-position: 0 -17px;
+				}
+
+
+		.showSection article p,
+		.showSection article ul,
+		.showSection article ol,
+		.showSection article dl,
+		.showSection article img,
+		.showSection article table,
+		.showSection article blockquote,
+		.showSection article h3 {
+			font-size: 12px;
+			margin-bottom: 0px;
+			line-height: 1.37;
+		}
+
+				.showSection article h3 {
+					text-transform: uppercase;
+					font-family: Palatino, Arial, sans-serif;
+					font-size: 11px;
+					line-height: 1.1;
+					margin: 0 0 0;
+					padding-top: 0px;
+					border-top: 1px dotted #a4b0bc;
+				}
+				.showSection article a {
+					color: #0872c4;
+				}
+				.showSection article a:hover {
+					text-decoration: underline;
+				}
+				.showSection article ul,
+				.showSection article ul li {
+					list-style: disc outside;
+				}
+						.showSection article ul li {
+							margin: 0 0 16px 18px;
+						}
+				.showSection article ol,
+				.showSection article ol li {
+					list-style: decimal outside;
+				}
+						.showSection article ol li {
+							margin: 0 0 13px 22px;
+						}
+
+
+
+		.showSection article em {
+			font-family: Palatino, Arial, sans-serif;
+			font-style: normal;
+		}
+		.showSection article strong {
+			font-family:  Arial, sans-serif;
+			font-weight: normal;
+		}
+		.showSection article strong em,
+		.showSection article em strong {
+			font-family:  Arial, sans-serif;
+			font-style: normal;
+			font-weight: normal;
+		}
+
+
+		.showSection article {
+			background: #c5d1de;
+			color: #1c222b;
+			font-size: 12px;
+			width: 675px;
+			height:100%;
+			float:right;
+		}
+				.showSection article header {
+					padding: 50px 3% 0px 3%;
+					border-bottom: 1px solid #a4b0bc;
+					padding-bottom: 20px;
+					margin-bottom: 20px;
+				}
+						.showSection article header h1 {
+							font: normal 26px/1.2 Palatino, Arial, sans-serif;
+							letter-spacing: 1px;
+							margin-bottom: 10px;
+						}
+								.showSection article header h1 a {
+									color: #72320c;
+								}
+										.showSection article header h1 a:hover {
+											color: #ba4d0b;
+										}
+						.showSection article header h2 {
+							font-family:Palatino, Arial, sans-serif;
+							letter-spacing: 1px;
+							color: #718599;
+							text-transform: uppercase;
+							font-size: 9px;
+						}
+						.showSection article blockquote {
+							border-left: 3px solid gray;
+							padding: 6px 0 6px 15px;
+						}
+								.showSection article blockquote cite {
+									text-transform: uppercase;
+									font-size: 10px;
+								}
+				.showSection article .rows {
+					padding: 0px 3% 0px 3%;
+					width: 90%;
+					height:60%;
+					overflow:hidden;
+				}
+				.showSection article .rows .header{
+					cursor: pointer;
+					width: 120px;
+					overflow:hidden;
+					font-size:18px;
+					border-bottom:2px solid #a4b0bc;
+				}
+					.showSection article .rows .content{
+					margin-top: 15px;
+					height:50%;
+					overflow:hidden;
+					display:none;
+					font-size:10px;
+				}
+
+				.showSection article .cols {
+					padding: 0px 3% 0px 3%;
+					width: 90%;
+					height:100%
+					overflow:hidden;
+				}
+						.showSection article .cols .prose {
+							width: 60%;
+							float: left;
+						}
+						.showSection article .cols .images {
+							width: 35%;
+							float: right;
+							height: auto;
+						}
+								.showSection article .cols .images img {
+									max-width: 96%;
+									display: block;
+									border: 1px solid gray;	
+									float: right;
+									padding: 2px;
+								}
+								.showSection #about .cols .images img {
+									margin-bottom: 5px;
+								}
+								.showSection article .cols .images .caption {
+									font: italic normal 10px/1.2 georgia, serif;
+									text-align: right;
+								}
+
