@@ -5,3 +5,5 @@
 @font-face{font-family:'SkolarWeb-Italic';src:url('../font/SkolarWeb-Italic.woff') format('woff');font-weight:normal;font-style:normal;}
 @font-face{font-family:'ArvilSans';src:url('../font/ArvilSans.woff') format('woff');font-weight:normal;font-style:normal;}
 @font-face{font-family:'TisaWebProRegular';src:url('../font/TisaWebProRegular.woff') format('woff');font-weight:normal;font-style:normal;}
+@font-face{font-family:'BebasNeue';src:url('../font/BebasNeue.woff') format('woff');font-weight:bold;font-style:normal;}
+@font-face{font-family:'BebasNeue-normal';src:url('../font/BebasNeue.woff') format('woff');font-weight:normal;font-style:normal;}

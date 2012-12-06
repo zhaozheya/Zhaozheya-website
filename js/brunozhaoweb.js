@@ -1,10 +1,17 @@
-
 $(document).ready(function(){ 
   //alert(getSysInfo().system.ipad);
   var device =getSysInfo().system
   if(device.win || device.ipad||device.mac||device.x11){
   	$("#mainstyle").attr("href","css/maker.css");
+       // $(".container").height("100em");
+        //alert($(window).height());
+		if($(window).height()>480){
 		$(".container").height($(window).height());
+                }
+                 if($(window).height()<480){
+		$(".container").height("480");
+                }
+  
   	}
   if(device.android || device.macmobile||device.nokiaN||device.winmobile){
   	$("#mainstyle").attr("href","css/makermobile.css");
