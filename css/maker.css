@@ -6,7 +6,7 @@ body {
   background: #e9e9e9;
   width:100%;
   color:#7EC0EE;
-  font-family: ProximaNova-Regular, Georgia, Palatino, serif;
+  font-family:BebasNeue, ProximaNova-Regular, Georgia, Palatino, serif;
   background-color:#ffffff;
   background-image: url(../images/background/stone.jpg);
   }
@@ -47,7 +47,11 @@ a{
 	height:100%;
 	width:15%;
 	background-color:#000000;
-	border-left:3px solid #8dd2ff;
+	border-left:2px solid #8dd2ff;
+        /*border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-right-radius: 4%;
+        border-bottom-right-radius: 4%;*/
 	}
 
 .span-left{
@@ -127,18 +131,18 @@ a{
 	margin:0em;
 	/*background: transparent;*/
 	color:#ffffff;
-	/*background-color:#e9e9e9;*/
+	background-color:#e9e9e9;
   border: 0px dotted #a4b0bc;
 	
 }
 #navigationbar li a div{
 	width:100%;
 	float:center;
-        font-family:BebasNeue, ProximaNova;
+   font-family:BebasNeue, ProximaNova;
 	border: 0px dotted #a4b0bc;
 	
 }
-#navigationbar li a div:visited{
+/*#navigationbar li a div:visited{
 	color:#74C2E9;
 	background-color:#000000;
 	border-bottom: 5px solid #74C2E9;
@@ -146,7 +150,7 @@ a{
 	border-radius: 11px 40px;
  	-webkit-border-radius: 11px 40px;*/
 	
-}
+}*/
 #navigationbar li a div:hover{
 	color:#ffffff;
 	background-color:#74C2E9;
@@ -155,8 +159,8 @@ a{
 	border-radius: 36px 50px 50px 36px / 12px 30px 30px 12px;
  	-webkit-border-radius: 36px 50px 50px 36px / 12px 30px 30px 12px;*/
 }
-#navigationbar li a :active div{
-	color:#74C2E9;
+#navigationbar li a div:active{
+	color:#ffffff;
 	background-color:#8dd2ff;
 	border-bottom: 5px solid #74C2E9;
 /*	-moz-border-radius: 11px 40px;
@@ -168,7 +172,7 @@ a{
 	top:1em;
 	width:100%;
 	text-align:left;
-	font-family: TisaWebProRegular, Helvetica,Segoe UI;
+	font-family: BebasNeue, TisaWebProRegular, Helvetica,Segoe UI;
 	font-size:20px;
 }
 #personInfo a{
@@ -190,15 +194,17 @@ a{
 	z-index: 10;
 	}
 #picturehead{
+	font-family:SkolarWeb-Bold, ArvilSans;
 	height:auto;
 	text-align:center;
 	}
 #picturehead h1{
-	padding-top:20px;
+	padding-top:10px;
 	color:#000;
 	font-size:44px;
 	}
 	#picturehead h2{
+	font-family: BebasNeue, TisaWebProRegular, Helvetica,Segoe UI;
 	margin-top:0px;
 	color:#fff;
 	font-size:14px;
@@ -206,21 +212,30 @@ a{
 
 #contacthead{
 	color:#ffffff;
+	height:18%;
+
 	}
 #contacthead h1 {
-		font-size:76px;
+		font-size:60px;
 
 }
+#contactcontent{
+	width:100%;
+	height:80%;
+	}
 #contactmail{
-	font-family: TisaWebProRegular;
-	font-size: 30px;
+	font-family: BebasNeue,£¬TisaWebProRegular;
+	font-size: 28px;
 	text-align: center;
 	color:#ffffff;
+	height:50%;
 	 
 	}
 #snslink{
-	margin-left: 30%;
-	width: 40%;
+	font-family: BebasNeue,£¬TisaWebProRegular;
+	font-size: 28px;
+	margin-left:25%;
+	width: 50%;
 	text-align:center;
 	
 	}
@@ -422,3 +437,161 @@ a{
 									text-align: right;
 								}
 
+/*emaiform*/
+#emaildiv{
+	width:100%;
+	height:70%;
+	text-align:center;
+	}
+input{
+	    font-family: BebasNeue,£¬TisaWebProRegular;
+			border:0px white dashed;
+			}
+textarea{
+	font-family: BebasNeue,£¬TisaWebProRegular;
+			border:0px white dashed;
+	
+	}
+  .emailform
+    {
+     background-color:#dee1ff;
+     font-size:20px;
+     color:#7EC0EE;
+     border-left:2px white dashed;
+     border-right:2px white dashed;
+     background:transparent;
+
+    }
+ .emailform1
+    {
+
+     background-color:#dee1ff;
+     font-size:20px;
+     color:#7EC0EE;
+     border-bottom:2px white dashed;
+     background:transparent;
+
+    }
+#mailform
+{
+	background:transparent;
+	width: 100%;
+	height:100%;
+	border: 2px;
+}
+.mdiv{
+	border:0px white dashed;
+  width:80%;
+	}
+#mailform input{
+	text-align:center;
+	width:80%;
+  height:20%;
+
+	}
+#mailform .mright{
+width: 45%;
+height:100%;
+float:right;
+text-align:center;
+}
+#mailform .mleft{
+text-align:center;
+width:53%;
+height:100%;
+float:left;
+border-right:0px white dashed;
+}
+#mailform textarea{
+	font-family: BebasNeue,£¬TisaWebProRegular;
+	width:60%;
+	margin:0 27%;
+	height:100%;
+	text-align:center;
+	font-size:20px;
+	height:100%;
+	resize:none;
+	scroll:none;
+	}
+#alertdiv{
+	display:none;
+	position:fixed;
+	top:43%;
+	left:30%;
+	width:350px;
+	height:100px;
+  background:#FF4040;
+  font-size:16px;
+  text-align:center;
+  border:4px white solid;
+  
+	}
+ #closediv{
+   width:20%;
+   margin:10% 40%;
+   color:white;
+   border:2px white solid;
+	}
+	
+	.pillar {
+	margin:5% 30%;
+  background:transparent; 
+  width:40%;
+  cursor:pointer;
+  }
+.pillar h1, .pillar p {
+  margin:0 10px;
+  }
+.pillar h1 {
+	text-align:center;
+  color:#fff;
+  }
+ .pillar h1 div {
+  width:100%
+  background:#7EC0EE;
+  font-size:12px; 
+  color:#fff;
+  }
+.pillar p {
+  padding-bottom:0.5em;
+  }
+.pillar .b1, .pillar .b2, .pillar .b3, .pillar .b4 {
+  display:block; 
+  overflow:hidden;
+  font-size:1px;
+  }
+.pillar .b1, .pillar .b2, .pillar .b4 {
+  height:1px;
+  }
+.pillar .b2, .pillar .b3 {
+  background:#7EC0EE; 
+  border-left:1px solid #fff; 
+  border-right:1px solid #fff;
+  }
+.pillar .b4 {
+  background:#7EC0EE; 
+  border-left:4px solid #fff; 
+  border-right:4px solid #fff;
+  }
+.pillar .b1 {
+  margin:0 2px; 
+  background:#fff;
+  }
+.pillar .b2 {
+  margin:0 1px; 
+  border-width:0 1px;
+  }
+.pillar .b3 {
+  height:2px; 
+  margin:0;
+  }
+.pillar .b4 {
+  margin:0 2px;
+  }
+.pillar .boxcontent {
+  display:block; 
+  background:#7EC0EE; 
+  border-left:1px solid #fff; 
+  border-right:1px solid #fff; 
+  margin:0 3px;
+  }

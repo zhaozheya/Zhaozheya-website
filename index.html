@@ -22,10 +22,11 @@
 		<script src="./js/responsive.js"></script>
 		<script src="./js/brunozhaoweb.js"></script>
 			  <!-- include jQuery -->
-	 <script src="js/jquery-1.7.1.min.js"></script>
+	  <script src="js/jquery-1.7.1.min.js"></script>
   
   <!-- Include the plug-in -->
     <script src="js/jquery.wookmark.js"></script>
+    <script src="js/ajaxmail.js"></script>
 
 
 
@@ -42,12 +43,12 @@
 			<div class="span-middle">
 					<div id="navigationbar">
 						<ul>
-							<li><a  class="slidebutton0 clickanchor" href="#home" ><div>Home</div></a></li>
-							<li><a  class="slidebutton0 clickanchor" href="#picturehead"><div>RelatedMe</div></a></li>
-							<li><a  class="slidebutton1" href="#moreme" ><div>More Me</div></a></li>
-							<li><a  class="slidebutton2" href="#resume" ><div>Resume</div></a></li>
-				  			<li><a  class="slidebutton3" href="blog/" target="blank" ><div>Blog</div></a></li>
-							<li><a  class="slidebutton0 clickanchor" href="#contacts"><div>Contacts</div></a></li>
+							<li><a  class="slidebutton0 clickanchor" href="#home" ><div >Home</div></a></li>
+							<li><a  class="slidebutton0 clickanchor" href="#picturehead"><div >RelatedMe</div></a></li>
+							<li><a  class="slidebutton1" href="#moreme" ><div >More Me</div></a></li>
+							<li><a  class="slidebutton2" href="#resume" ><div >Resume</div></a></li>
+				  			<li><a  class="slidebutton3" href="blog/" target="blank" ><div >Blog</div></a></li>
+							<li><a  class="slidebutton0 clickanchor" href="#contacts"><div >Contacts</div></a></li>
 		            </ul>						
 					</div>
 			</div>
@@ -82,15 +83,13 @@
 </div>
 
 <!--Picture-->	
+
 <div class="head" id="picturehead" style="width:85%;">
 									<h1>RelatedMe </h1>
 									<h2>Click the filter words related to Me below . the Grid will show the things of me that match at least one filter.</h2>
-									<br><br>
+									
 </div>
-
 <div class="container1" id="picture">
-
-
     <div class="span-left" style="width:85%; overflow:hidden;" id="main">
 
       <!--
@@ -145,30 +144,62 @@
 </div>
 <!--Contacts-->	
 
-<div class="container" id="contacts" >
+  <div class="container" id="contacts" >
   		<div class="span-left" >
   			<div class="head" id="contacthead">
   			  		<h1>Contacts</h1>
   			</div>
-  				<div class="content">
+                <div id="contactcontent">
   								<div id="contactmail">
-	            	     <p>You can get in touch with me via my <a href="mailto:zhaozheya@hotmail.com"> Email</a> <br>
-	            	     Or chatting with me on SNS sites:</p>
-								</div>							  
-							  <div class="center">
+	            	     <p><div>You can get in touch with me via my <a href="mailto:zhaozheya@hotmail.com"> Email</a> Or <a>Message Me</a></div></p>
+	            	    
+	            	     <p><div id="emaildiv">
+														<form id="mailform" >
+															<div class="mright mdiv" >
+																	<input type="email" class="emailform1"  id="address" value="Email" onfocus="if (this.value=='Email')this.value=''" onblur="if (this.value=='')this.value='Email'" />
+																	
+																	<input type="text" class="emailform1"  id="name" value="Your Name" onfocus="if (this.value=='Your Name')this.value=''" onblur="if (this.value=='')this.value='Your Name'" />
+																	
+																	<input type="text" class="emailform1"  id="subject"  value="Subject" onfocus="if (this.value=='Subject')this.value=''" onblur="if (this.value=='')this.value='Subject'"/>
+																<br/>
+																<div class="pillar">
+																		<b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b2"></b><b class="b4"></b>
+																		<div class="boxcontent">
+																		<h1><div id="mailbutton" value="send" onclick="sendmail()">Message Me</div></h1>
+																		</div>
+																		<b class="b4"></b><b class="b2"></b><b class="b3"></b><b class="b2"></b><b class="b1"></b>
+																</div>
+															</div>
+															<div class="mleft mdiv" >
+															 <textArea type="text" class="emailform"  id="content"  onfocus="if (this.innerHTML=='Things You Wanna to Talk With Me')this.innerHTML=''" onblur="if (this.innerHTML=='')this.innerHTML='Things You Wanna to Talk With Me'">Things You Wanna to Talk With Me</textArea>
+															</div>
+														
+														</form>
+														<br>
+
+									 </div></p>
+                     
+                  
+
+                  </div>
+								     
 										<div id="snslink">
+											<p><div>Or chatting with me on SNS sites: </div></p>
 											<li><a href="http://weibo.com/zhaozheya" target="blank"><img src="images/ico/weibo.png" alt="" /></a></li>
 											<li><a href="http://twitter.com/zhaozheya" target="blank"><img src="images/ico/twitter.png" alt="" /></a></li>
 											<li><a href="https://zhaozheya.wordpress.com" target="blank"> <img src="images/ico/wordpress.png" alt="" /> </a></li>
 											<li><a href="https://zhaozheya.facebook.com" target="blank"> <img src="images/ico/facebook.png" alt="" /> </a></li>
 											<li><a href="http://www.linkedin.com/pub/yue-zhao/37/2a5/9b9" target="blank"> <img src="images/ico/linkedin.png" alt="" /></a></li>
 										</div>
-							 </div>			
+							 	</div>
+								
+			</div>							  
+							  		
 							  	
 	
-				</div>
-  		</div>	  		
-</div>
+  </div>
+	  		
+
 
 
 
@@ -256,6 +287,11 @@
 
 	</div>
 
+
+<div id="alertdiv">
+<p><div id="txtHint"></div></p>
+<p><div id="closediv" onclick="closeDiv('alertdiv')">close</div></p>
+</div>
 
 
 

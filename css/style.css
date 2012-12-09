@@ -64,6 +64,7 @@ margin: 0 5% 0 5%;
 }
 
 #filters li {
+background: #333333;
 font-size: 12px;
 float: left;
 padding: 6px 0 4px 0;
@@ -84,8 +85,8 @@ background: #dedede;
 }
 
 #filters li.active {
-background: #333333;
-color: #ffffff;
+background: #ffffff;
+/*color: #ffffff;*/
 }
 
 /**
