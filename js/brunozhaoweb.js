@@ -100,7 +100,6 @@ function change_skin(obj){
 		}
 		
 
-
 //anchor slide
 $(document).ready(function(){
 	$(".clickanchor").click(function(){
@@ -116,6 +115,9 @@ $(document).ready(function(){
 		$("#resume").hide();
 		$("#moreme").hide();
 		//$("#contacts").slideDown();
+				$(".navdiv").css("border-bottom", "")
+        $(this).children().css("border-bottom", "3px #74C2E9 solid")
+        return false;
 
 		});
   });
@@ -123,12 +125,13 @@ $(document).ready(function(){
 //slidedown1
 	$(document).ready(function(){
     $(".slidebutton1").click(function () {
-		$("#resume").hide();
 		if ($("#moreme:first").is(":hidden")) {
 		$("#moreme").animate({width: 'toggle'}, 500);
 		} else {
 		$("#moreme").animate({width: 'toggle'}, 500);
 		}
+		$("#resume").hide();
+
 		});
   });
 
@@ -143,6 +146,7 @@ $(document).ready(function(){
 		$("#resume").animate({width: 'toggle'}, 500);
 		}
 		$("#moreme").hide();
+
 		});
 	});
 

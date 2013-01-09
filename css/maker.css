@@ -7,9 +7,12 @@ body {
   width:100%;
   color:#7EC0EE;
   font-family:BebasNeue, ProximaNova-Regular, Georgia, Palatino, serif;
-  background-color:#ffffff;
-  background-image: url(../images/background/stone.jpg);
+  background-color:#000000;
+  /*background-image: url(../images/background/stone.jpg);*/
   }
+
+
+
 a{
 	text-decoration : none;
 	color:#8dd2ff;
@@ -47,11 +50,13 @@ a{
 	height:100%;
 	width:15%;
 	background-color:#000000;
-	border-left:2px solid #8dd2ff;
-        /*border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
+	border-left:2px solid #7EC0EE;
+  border-right:0px solid #ffffff;
+        /*border-top-left-radius: 100%;
+        border-bottom-left-radius: 5%;
         border-top-right-radius: 4%;
-        border-bottom-right-radius: 4%;*/
+        border-bottom-right-radius: 4%;
+        border-radius:1%;*/
 	}
 
 .span-left{
@@ -108,64 +113,49 @@ a{
 	height:100%;
 	width:100%;
 	overflow:hidden;
+	
 
 }
 #navigationbar ul{
 	height:100%;
 	list-style: none;
-
+  color:#ffffff;
 
 }
-#navigationbar li{
+
+#navigationbar div{
+		width:100%;
+		color:#ffffff;
+	}
+#navigationbar li {
+	color:#ffffff;
 	width: 100%;
-	border:0px solid #8dd2ff;
 	height:16%;
-	over-flow: hidden
-	
-}
-
-#navigationbar li a{
-	width: 100%;
+	overflow: hidden;
 	text-decoration : none;
 	border:0px solid #8dd2ff;
 	margin:0em;
-	/*background: transparent;*/
-	color:#ffffff;
-	background-color:#e9e9e9;
-  border: 0px dotted #a4b0bc;
-	
-}
-#navigationbar li a div{
 	width:100%;
-	float:center;
-   font-family:BebasNeue, ProximaNova;
-	border: 0px dotted #a4b0bc;
+	font-family:BebasNeue, ProximaNova;
 	
 }
-/*#navigationbar li a div:visited{
-	color:#74C2E9;
-	background-color:#000000;
+#navigationbar li :visited{
+	color:#ffffff;
+	background-color:#aaaaaa;
 	border-bottom: 5px solid #74C2E9;
-/*	-moz-border-radius: 11px 40px;
-	border-radius: 11px 40px;
- 	-webkit-border-radius: 11px 40px;*/
-	
-}*/
-#navigationbar li a div:hover{
+
+}
+#navigationbar li :hover{
 	color:#ffffff;
 	background-color:#74C2E9;
 	border-bottom: 5px solid #74C2E9;
-/*	-moz-border-radius: 36px 50px 50px 36px / 12px 30px 30px 12px;
-	border-radius: 36px 50px 50px 36px / 12px 30px 30px 12px;
- 	-webkit-border-radius: 36px 50px 50px 36px / 12px 30px 30px 12px;*/
+
 }
-#navigationbar li a div:active{
+#navigationbar li :active{
 	color:#ffffff;
 	background-color:#8dd2ff;
 	border-bottom: 5px solid #74C2E9;
-/*	-moz-border-radius: 11px 40px;
-	border-radius: 11px 40px;
- 	-webkit-border-radius: 11px 40px;*/	
+	
 }
 
 #personInfo{
@@ -187,10 +177,10 @@ a{
 	font-family:SkolarWeb-Bold, ArvilSans;
 	}
 #personInfohead img{
-	width:10%;
+	width:7%;
 	position: fixed;
-	right: 10%;
-	top: 3%;
+	right: 4%;
+	top: 2%;
 	z-index: 10;
 	}
 #picturehead{
@@ -200,7 +190,7 @@ a{
 	}
 #picturehead h1{
 	padding-top:10px;
-	color:#000;
+	color:#fff;
 	font-size:44px;
 	}
 	#picturehead h2{
@@ -217,7 +207,7 @@ a{
 	}
 #contacthead h1 {
 		font-size:60px;
-
+    color:#8DD2FF;
 }
 #contactcontent{
 	width:100%;
@@ -273,7 +263,7 @@ a{
 			background: url(../images/background/close_panel.png) no-repeat;
 			position: absolute;
 			left: 3%;
-			top: 10px;
+			top: 11px;
 			cursor: pointer;
 			text-indent: -9999px;
 			overflow: hidden;
@@ -410,7 +400,7 @@ a{
 				.showSection article .cols {
 					padding: 0px 3% 0px 3%;
 					width: 90%;
-					height:100%
+					height:100%;
 					overflow:hidden;
 				}
 						.showSection article .cols .prose {
@@ -459,7 +449,10 @@ textarea{
      color:#7EC0EE;
      border-left:2px white dashed;
      border-right:2px white dashed;
+     border-top:0px white dashed;
+     border-bottom:0px white dashed;
      background:transparent;
+     border-radius:3%;
 
     }
  .emailform1
@@ -511,7 +504,7 @@ border-right:0px white dashed;
 	font-size:20px;
 	height:100%;
 	resize:none;
-	scroll:none;
+	overflow:hidden;
 	}
 #alertdiv{
 	display:none;
@@ -547,7 +540,7 @@ border-right:0px white dashed;
   color:#fff;
   }
  .pillar h1 div {
-  width:100%
+  width:100%;
   background:#7EC0EE;
   font-size:12px; 
   color:#fff;

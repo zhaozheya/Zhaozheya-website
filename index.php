@@ -10,28 +10,18 @@
 		<meta name="description" content="This page is zhaozheya's website, zhaozheya,zhaoyue,bruno zhao, ecole centrale de pekin,individual,web developer,app developer,"/>
 		<meta name ="keywords" content="zhaozheya,zhaoyue,bruno zhao, ecole centrale de pekin,individual,web developer,app developer,"/>
 		<meta name="robots" contect="all" >
-
+    <title>Zhaozheya | Here I AM</title>
 		<link rel="icon" href="images/ico/zy16.png" type="image/x-icon" />
-		<link rel="stylesheet" href="css/font.css" >
-
-	  
-	  <!-- Styling for your grid blocks -->
-	  <link rel="stylesheet" href="css/style.css">
-		
+    <link rel="stylesheet" href="css/font.css" >
+    <!-- Styling for your grid blocks -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" id="mainstyle" href="css/maker.css" >		
 		<script src="./js/jquery.js"></script>
 		<script src="./js/responsive.js"></script>
 		<script src="./js/brunozhaoweb.js"></script>
-			  <!-- include jQuery -->
-	  <script src="js/jquery-1.7.1.min.js"></script>
-  
-  <!-- Include the plug-in -->
+    <!-- Include the plug-in -->
     <script src="js/jquery.wookmark.js"></script>
     <script src="js/ajaxmail.js"></script>
-
-
-
-<link rel="stylesheet" id="mainstyle" href="css/maker.css" >
-
 
 	</head>
 
@@ -43,12 +33,12 @@
 			<div class="span-middle">
 					<div id="navigationbar">
 						<ul>
-							<li><a  class="slidebutton0 clickanchor" href="#home" ><div >Home</div></a></li>
-							<li><a  class="slidebutton0 clickanchor" href="#picturehead"><div >RelatedMe</div></a></li>
-							<li><a  class="slidebutton1" href="#moreme" ><div >More Me</div></a></li>
-							<li><a  class="slidebutton2" href="#resume" ><div >Resume</div></a></li>
-				  			<li><a  class="slidebutton3" href="blog/" target="blank" ><div >Blog</div></a></li>
-							<li><a  class="slidebutton0 clickanchor" href="#contacts"><div >Contacts</div></a></li>
+							<li><a  class="slidebutton0 clickanchor" href="#home" ><div class="navdiv">Home</div></a></li>
+							<li><a  class="slidebutton0 clickanchor" href="#picturehead"><div class="navdiv" >RelatedMe</div></a></li>
+							<li><a  class="slidebutton1" href="#moreme" ><div >More Me</div class="navdiv"></a></li>
+							<li><a  class="slidebutton2" href="#resume" ><div >Resume</div class="navdiv"></a></li>
+				  		<li><a  class="slidebutton3" href="blog/" target="blank" ><div class="navdiv">Blog</div></a></li>
+							<li><a  class="slidebutton0 clickanchor" href="#contacts"><div class="navdiv">Contacts</div></a></li>
 		            </ul>						
 					</div>
 			</div>
@@ -59,7 +49,7 @@
 	  			<div class="content">
 				<div id="personInfo" >
 							<div class="head" id="personInfohead">
-									<img src="images/ico/zhaozheya.png" alt="zhaozheya">
+									<!--<img src="images/ico/zhaozheya.png" alt="zhaozheya">-->
 									<h1>$: Who Am I </h1>
 									<br><br>
 							</div>
@@ -97,14 +87,14 @@
         grid items to show.
         -->
       <ol id="filters">
-        <li data-filter="life">Life</li>
-        <li data-filter="work">Work</li>
-        <li data-filter="sport">Sport</li>
-        <li data-filter="tech">Tech</li>
-        <li data-filter="hobbies">Hobbies</li>
-        <li data-filter="location">Location</li>
-        <li data-filter="ecpkn">ECPKn</li>
-        <li data-filter="beihang">Beihang</li>
+        <li data-filter="life"><div class="fildiv">Life</div></li>
+        <li data-filter="work"><div class="fildiv">Work</div></li>
+        <li data-filter="sport"><div class="fildiv">Sport</div></li>
+        <li data-filter="tech"><div class="fildiv">Tech</div></li>
+        <li data-filter="hobbies"><div class="fildiv">Hobbies</div></li>
+        <li data-filter="location"><div class="fildiv">Location</div></li>
+        <li data-filter="ecpkn"><div class="fildiv">ECPKn</div></li>
+        <li data-filter="beihang"><div class="fildiv">Beihang</div></li>
       </ol>
 
       <ul id="tiles">
@@ -151,7 +141,7 @@
   			</div>
                 <div id="contactcontent">
   								<div id="contactmail">
-	            	     <p><div>You can get in touch with me via my <a href="mailto:zhaozheya@hotmail.com"> Email</a> Or <a>Message Me</a></div></p>
+	            	     <p><div>You can get in touch with me via my <a href="mailto:zhaozheya@hotmail.com" title="My Email | zhaozheya@hotmail.com"> Email</a> Or <a>Message Me</a></div></p>
 	            	    
 	            	     <p><div id="emaildiv">
 														<form id="mailform" >
@@ -292,6 +282,7 @@
 <p><div id="txtHint"></div></p>
 <p><div id="closediv" onclick="closeDiv('alertdiv')">close</div></p>
 </div>
+
 
 
 
